@@ -8,7 +8,7 @@ The system utilizes an **Adaptive Hybrid Navigation (Timed + Sensor-Guided)** ap
 * **Pre-mapped timed movements** calibrated specifically for the physical track layout.
 * **Dynamic distance checkpoints** via a scanning ultrasonic sensor to trigger state transitions (turns, stops) at physical walls, rather than relying solely on open-loop delays.
 
-## 🛠️ Hardware Architecture
+## Hardware Architecture
 The robot is built on a custom dual-tier wooden chassis featuring a modified Ackermann steering mechanism. 
 
 | Component | Specification / Role |
@@ -46,7 +46,7 @@ Continuous forward drive interleaved with precise steering commands and sensor-t
 * **ESP32 Migration:** Upgrading the MCU to an ESP32 to enable wireless telemetry, real-time remote monitoring, and advanced IoT integrations.
 * **PID Controller Implementation:** Adding side-facing ultrasonic sensors for true closed-loop lateral PID wall-following.
 
-## 👥 Team Contributions (Group 8)
+## Team Contributions (Group 8)
 * **Olcay Karahasan:** Low-level sensor code (`measureDistance()`), HC-SR04 trigger/echo timing, I2C LCD telemetry, ultrasonic pan servo logic, and start-position validation algorithms.
 * **Mohammad Sadra Najafi:** Chassis 3D design, power management routing, and L298N circuit integration.
 * **Feryal Çetin:** Hardware assembly, motor mounting, structural integrity, and center-of-mass optimization for ramp stability.
